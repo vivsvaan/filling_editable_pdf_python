@@ -8,6 +8,7 @@ from PIL import Image
     replace all the constants (the one in caps) with your own lists
 '''
 
+
 class ProcessImage:
     image_extensions = ['png', 'jpg', 'jpeg']
 

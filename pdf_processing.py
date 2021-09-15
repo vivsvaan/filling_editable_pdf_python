@@ -12,14 +12,6 @@ from PIL import Image
     replace all the constants (the one in caps) with your own lists
 '''
 
-
-FORM_KEYS = {
-    "fname" : "string",
-    "lname" : "string",
-    "sex" : :checkbox",
-    "mobile" : "number"
-}
-
 '''
 FORM_KEYS is a dictionary (key-value pair) that contains 
 1. keys - which are all the key names in the PDF form 
@@ -29,8 +21,17 @@ Eg. PDF form contains
 1. First Name
 2. Last Name
 3. Sex (Male or Female)
+4. Mobile Number
 
-This FORM_KEYS(key) returns the type of value for that key. I'm passing this as 2nd argument to encode_pdf_string() function.
+FORM_KEYS = {
+    "fname": "string",
+    "lname": "string",
+    "sex": "checkbox",
+    "mobile": "number"
+}
+
+This FORM_KEYS(key) returns the type of value for that key. 
+I'm passing this as 2nd argument to encode_pdf_string() function.
 '''
 
 
