@@ -12,6 +12,28 @@ from PIL import Image
     replace all the constants (the one in caps) with your own lists
 '''
 
+
+FORM_KEYS = {
+    "fname" : "string",
+    "lname" : "string",
+    "sex" : :checkbox",
+    "mobile" : "number"
+}
+
+'''
+FORM_KEYS is a dictionary (key-value pair) that contains 
+1. keys - which are all the key names in the PDF form 
+2. values - which are the type for all the keys in the PDF form. (string, checkbox, etc.)
+
+Eg. PDF form contains 
+1. First Name
+2. Last Name
+3. Sex (Male or Female)
+
+This FORM_KEYS(key) returns the type of value for that key. I'm passing this as 2nd argument to encode_pdf_string() function.
+'''
+
+
 class ProcessPdf:
 
     def __init__(self, temp_directory, output_file):
