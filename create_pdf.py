@@ -12,7 +12,7 @@ temp_files = []
 
 pdf = ProcessPdf('pdf_temp/', output_file)
 
-data_pdf = pdf.add_data_to_pdf(PDF_TEMPLACE_PATH_HERE, data)
+data_pdf = pdf.add_data_to_pdf(PDF_TEMPLATE_PATH_HERE, data)
 
 temp_files.append(data_pdf)
 
