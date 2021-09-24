@@ -41,5 +41,5 @@ temp_files.append(data_image_pdf)
 
 compressed_pdf = pdf.compress_pdf(data_image_pdf)
 
-pdf.delete_tempfiles(temp_files)
+pdf.delete_temp_files(temp_files)
 
