@@ -55,7 +55,7 @@ class ProcessPdf:
                 continue
 
             for annotation in annotations:
-                if annotation['/Subtype'] == ['/Widget']:
+                if annotation['/Subtype'] == '/Widget':
                     if annotation['/T']:
                         key = annotation['/T'][1:-1]
                         if re.search(r'.-[0-9]+', key):
